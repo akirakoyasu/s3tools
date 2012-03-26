@@ -1,0 +1,35 @@
+h1. s3tools: Amazon S3 CLI
+
+Simple Command Line Interface for Amazon S3
+
+# Written in Java
+# Build by Maven
+
+h2. Get sources
+
+<pre>
+$ git clone git://github.com/akirakoyasu/s3tools.git
+</pre>
+
+h2. Build
+
+<pre>
+$ mvn package
+</pre>
+
+h2. Usage
+
+Set environment variables
+* S3TOOLS_ACCESSKEY_ID
+* S3TOOLS_SECRET_ACCESSKEY
+
+<pre>
+$ s3-list s3://backetName/
+$ s3-get s3://backetName/key
+$ s3-put file s3://backetName/key
+</pre>
+
+h2. Get binaries?
+
+To download binary distributions, 
+visit site: "http://www.akirakoyasu.net/s3tools/":http://www.akirakoyasu.net/s3tools/
