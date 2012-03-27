@@ -19,6 +19,13 @@
 		</license>
 	</licenses>
 
+	<scm>
+		<connection>scm:git://github.com/akirakoyasu/s3tools.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:akirakoyasu/s3tools.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/akirakoyasu/s3tools</url>
+	</scm>
+	
 	<developers>
 		<developer>
 			<name>Akira Koyasu</name>
@@ -67,11 +74,14 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
+				<!-- 
 					<descriptorRefs>
 						<descriptorId>project</descriptorId>
 					</descriptorRefs>
+				 -->
 					<descriptors>
 						<descriptor>src/main/assembly/dist.xml</descriptor>
+						<descriptor>src/main/assembly/project.xml</descriptor>
 					</descriptors>
 				</configuration>
 				<executions>
